@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JavaScriptLibraryMappings">
+    <file url="PROJECT" libraries="{Prototype-1.7.1, async-DefinitelyTyped, google-closure-compiler-DefinitelyTyped, google-maps-DefinitelyTyped, googlemaps.infobubble-DefinitelyTyped, jQuery UI-1.10.2, script.aculo.us-1.9.0}" />
+  </component>
+</project>

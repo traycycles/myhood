@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timber Ridge</title>
+    <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/tstyles.css">
+    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+            async defer></script>
+    <script id="tockify-embed-script" data-tockify-script="embed" src="https://public.tockify.com/browser/embed.js"></script>
+</head>
+
+<body>
+
+<header class="main-header">
+    <div class="container clearfix">
+        <!--<h1 class="name"><a href="#">Timber Ridge</a></h1>-->
+        <ul class="main-nav">
+            <li><a href="#">Welcome</a></li>
+            <li><a href="#">Community</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Messages</a></li>
+            <li><a href="#">Login/Register</a></li>
+        </ul>
+    </div>
+</header><!--/.main-header-->
+
+
+<div class="banner">
+    <h1 class="headline">Timber Ridge</h1>
+    <h2>Townhomes & Condominums</h2>
+    <span class="tagline">Urban Park living in the best city ever.</span>
+</div><!--/.banner-->
+
+<div class="container clearfix">
+    <div class="secondary col">
+        <h2>Welcome!</h2>
+        <p>This is Timber Ridge Resident's site. </p>
+        <p>Information for the public and prospective buyers can be found in the Public area.</p>
+        <p>Residents need to register in order to post in the forum.  If you're renting, please make sure that
+        the management company has your current information. Once your residency has been verified you will be able
+            to access the forum. Until then, you may only access the public area.</p>
+        <p>For homeowners, Meeting minutes, Director contacts, and other documents will be made available.</p>
+
+    </div><!--/.secondary-->
+
+    <div class="primary col">
+        <h2>Our Park: The Property</h2>
+        <img class="feat-img" src="#" alt="Trees everywhere">
+        <p>
+            There is easy access to Lake Shore for running and jogging, minutes from South Congress for shopping and a hop and a skip from South Lamar.
+            The property has 70 condominiums and 100 townhomes. All the properties are unique and include interior atriums.
+            Many have balconies either in the atrium or on the outside. The townhomes are 2 or 3 bedroom plans and the condominiums are 2 bedroom plans.
+            Some of the townhomes have vaulted ceilings and all the units have wood burning fireplaces. </p>
+         <p>HOA fees cover the exterior maintenance, grounds, swimming pool and tennis courts.</p>
+
+    </div><!--/.primary-->
+
+    <div class="tertiary col">
+        <h2>How to get here</h2>
+        <p>The Timber Ridge Condominiums and Town Homes are located next to downtown, 5 miles from UT and across the freeway from St. Edward's University.
+            They are between the newly to be remodeled Riverside and Woodward streets east of I-35.</p>
+        <p id="map"></p>
+
+
+    </div><!--/.tertiary-->
+    <div class="last col">
+        <h2>Timber Ridge Calendar</h2>
+        <p data-tockify-component="calendar" data-tockify-calendar="trcal"
+           data-tockify-view="monthly"  >
+        </p>
+    </div>
+</div>
+
+
+<footer class="main-footer">
+    <span>&copy;2016 Residents of The Best Community Ever.</span>
+</footer>
+<script>
+    function initMap() {
+        var mapDiv = document.getElementById('map');
+        var trLatLng = {lat: 30.226486, lng: -97.742779};
+        var map = new google.maps.Map(mapDiv, {
+            center: trLatLng,
+            zoom: 13
+        });
+        var marker = new google.maps.Marker({
+            position: trLatLng,
+            map: map,
+            title: 'Timber Ridge'
+        });
+    }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
+</body>
+</html>
