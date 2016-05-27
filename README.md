@@ -1,0 +1,1 @@
+## This repo is for a hyperlocal project in my townhome community. A work in progress.
